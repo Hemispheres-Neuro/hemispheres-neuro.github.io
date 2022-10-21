@@ -2819,6 +2819,17 @@ button:disabled,
   top: 0;
   width: 100%;
   z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header img {
+  height: 75%;
+  margin-right: 1em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 #header h1 {
@@ -2899,9 +2910,14 @@ button:disabled,
   background-color: transparent;
 }
 
-#header.alt h1 {
+#header.alt h1, #header.alt img {
   opacity: 0;
   visibility: hidden;
+}
+
+#header.alt img {
+  -webkit-transition: opacity 0.2s ease-in-out, visibility 0.2s;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s;
 }
 
 @media screen and (max-width: 736px) {
@@ -3114,15 +3130,10 @@ body.is-menu-visible #menu .inner {
 }
 
 #banner .logo .icon {
-  border-radius: 100%;
-  border: solid 2px rgba(255, 255, 255, 0.125);
   cursor: default;
   display: inline-block;
   font-size: 2em;
-  height: 2.25em;
-  line-height: 2.25em;
-  text-align: center;
-  width: 2.25em;
+  width: 4.25em;
 }
 
 #banner h2 {
