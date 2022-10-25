@@ -1,7 +1,7 @@
 {
   "name": "html5up-solid-state",
   "version": "1.0.0",
-  "description": "hemispheres neuro",
+  "description": "HemispheresNeuro",
   "main": "index.js",
   "dependencies": {
     "node-sass": "^7.0.3",
