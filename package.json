@@ -4,10 +4,8 @@
   "description": "HemispheresNeuro",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^7.0.3",
     "sass": "^1.55.0"
   },
-  "devDependencies": {},
   "scripts": {
     "sass": "sass --watch assets/sass:assets/css"
   },
